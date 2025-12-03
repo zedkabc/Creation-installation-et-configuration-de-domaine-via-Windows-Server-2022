@@ -77,7 +77,7 @@ Via le **Gestionnaire de serveur** :
 
 ---
 
-👨‍💻 Auteur : Antoine Renavot  
-📅 Date : 15/05/2023  
-🏫 Campus Montsouris – BTS SIO SISR
+👨‍💻 Auteur : Louka Lavenir 
+📅 Date : 25/04/2025  
+🏫 Mediaschool Nice – BTS SIO SISR
 
