@@ -7,7 +7,7 @@ Déployer un domaine Active Directory sur **Windows Server 2022** installé dans
 
 ## 🧩 Prérequis
 - 💿 ISO **Windows Server 2022** (Standard ou Datacenter)  
-- 🖥️ Une **VM** (VirtualBox, VMware, Hyper-V…) avec ressources minimales :  
+- 🖥️ Une **VM** avec ressources minimales :  
   - CPU : 2 cœurs  
   - RAM : 4 Go (minimum recommandé)  
   - Disque : 50 Go  
@@ -28,9 +28,9 @@ Déployer un domaine Active Directory sur **Windows Server 2022** installé dans
 ## 🔑 Étapes principales
 
 ### 1. Configuration du serveur
-- Renommer le serveur (exemple : `MARS`)  
-- Configurer une **adresse IP statique** (exemple : `192.168.75.1/26`)  
-- Définir le DNS préféré sur `127.0.0.1`  
+- Renommer le serveur  
+- Configurer une **adresse IP statique**  
+- Définir le DNS préféré sur la même IP 
 
 ### 2. Installation des rôles
 Via le **Gestionnaire de serveur** :
@@ -41,9 +41,9 @@ Via le **Gestionnaire de serveur** :
 
 ### 3. Configuration Active Directory
 - Promouvoir le serveur en **contrôleur de domaine**  
-- Créer une **nouvelle forêt** : `formation.lan`  
+- Créer une **nouvelle forêt** : `abc.lan`  
 - Définir le mot de passe DSRM  
-- Vérifier le nom **NetBIOS** (`FORMATION`)  
+- Vérifier le nom **NetBIOS** (`ABC`)  
 - Valider les chemins par défaut :  
   - Base AD DS → `C:\Windows\NTDS`  
   - SYSVOL → `C:\Windows\SYSVOL`  
@@ -70,7 +70,7 @@ Via le **Gestionnaire de serveur** :
 ---
 
 ## ✅ Résultat attendu
-- Domaine fonctionnel : `formation.lan`  
+- Domaine fonctionnel : `abc.lan`  
 - Utilisateurs et groupes gérés via Active Directory  
 - Ressources partagées accessibles selon droits  
 - DHCP distribuant automatiquement les IP aux clients  
