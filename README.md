@@ -6,7 +6,7 @@ Déployer un domaine Active Directory sur **Windows Server 2022** installé dans
 ---
 
 ## 🧩 Prérequis
-- 💿 ISO **Windows Server 2022** (Standard ou Datacenter)  
+- 💿 ISO **Windows Server 2022** 
 - 🖥️ Une **VM** avec ressources minimales :  
   - CPU : 2 cœurs  
   - RAM : 4 Go (minimum recommandé)  
