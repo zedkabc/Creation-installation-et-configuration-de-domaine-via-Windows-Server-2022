@@ -62,10 +62,6 @@ Via le **Gestionnaire de serveur** :
 - Configurer la passerelle et le DNS pour les clients  
 - Activer et valider le service  
 
-### 7. Connexion d’un poste client
-- Sur Windows 10 :  
-  - Panneau de configuration → Système → Modifier les paramètres → Domaine  
-  - Rejoindre `formation.lan` avec un compte Active Directory  
 
 ---
 
