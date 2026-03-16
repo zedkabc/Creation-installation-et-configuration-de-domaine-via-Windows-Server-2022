@@ -41,9 +41,9 @@ Via le **Gestionnaire de serveur** :
 
 ### 3. Configuration Active Directory
 - Promouvoir le serveur en **contrôleur de domaine**  
-- Créer une **nouvelle forêt** : `abc.lan`  
+- Créer une **nouvelle forêt** : `mediaschool.lan`  
 - Définir le mot de passe DSRM  
-- Vérifier le nom **NetBIOS** (`ABC`)  
+- Vérifier le nom **NetBIOS** (`MEDIASCHOOL`)  
 - Valider les chemins par défaut :  
   - Base AD DS → `C:\Windows\NTDS`  
   - SYSVOL → `C:\Windows\SYSVOL`  
@@ -66,7 +66,7 @@ Via le **Gestionnaire de serveur** :
 ---
 
 ## ✅ Résultat attendu
-- Domaine fonctionnel : `abc.lan`  
+- Domaine fonctionnel : `mediaschool.lan`  
 - Utilisateurs et groupes gérés via Active Directory  
 - Ressources partagées accessibles selon droits  
 - DHCP distribuant automatiquement les IP aux clients  
