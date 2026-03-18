@@ -58,14 +58,6 @@
    - Restrictions étudiants : blocage outils d’administration, limitation panneau de configuration, restriction des périphériques de stockage amovibles.
    - Scripts de connexion : mappage lecteurs réseau selon groupes AD, fond d’écran institutionnel, configuration automatique du pare-feu Windows.
 
-  Ajout de sécurité/audit :
-
-   - GPO GPO-AUDIT-ANSSI sur OU=Ordinateurs
-   - Événements : 4624, 4625, 4634, 4720, 4672
-   - Journal Security : 512 Mo minimum
-   - Rétention : 1 an
-   - Référence ANSSI : DAT-NT-017
-
   ### 3.3 Scripts PowerShell idempotents et commentés
 
   Script 1 — Import CSV en masse :
