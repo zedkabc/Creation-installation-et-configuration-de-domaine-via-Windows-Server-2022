@@ -10,19 +10,19 @@
   L’enjeu principal est donc de mettre en place une infrastructure d’identité fiable, sécurisée, documentée et durable, permettant une exploitation
   autonome par l’établissement, avec une logique industrialisée pour les rentrées et les fins d’année scolaires.
 
-  2) Engagement global de réalisation
+  ## 2) Engagement global de réalisation
 
-  Nous nous engageons à livrer un socle complet autour de Windows Server 2022 + AD DS + DNS intégré, avec gouvernance des accès, automatisation PowerShell
+  Contenu : Windows Server 2022 + AD DS + DNS intégré, avec gouvernance des accès, automatisation PowerShell
   idempotente, sécurité alignée ANSSI, intégration NPS/RADIUS 802.1X et documentation d’exploitation complète.
 
-  Notre approche vise la robustesse opérationnelle : standardisation, traçabilité, rejouabilité des procédures et validation de recette sur des cas
+  Mon approche vise la robustesse opérationnelle : standardisation, traçabilité, rejouabilité des procédures et validation de recette sur des cas
   d’usage concrets du campus.
 
-  3) Réponse détaillée aux exigences obligatoires
+  ## 3) Réponse détaillée aux exigences obligatoires
 
-  3.1 Exigence (1) — AD DS + DNS intégré + structure OU
+  ### 3.1 Exigence (1) — AD DS + DNS intégré + structure OU
 
-  Nous déploierons Active Directory Domain Services sur Windows Server 2022 avec promotion en contrôleur de domaine principal et configuration DNS
+  Déploiement d'Active Directory Domain Services sur Windows Server 2022 avec promotion en contrôleur de domaine principal et configuration DNS
   complète.
 
   Le périmètre couvre : installation des rôles, création du domaine AD, zones DNS directe et inverse, validation des enregistrements SRV, tests de
