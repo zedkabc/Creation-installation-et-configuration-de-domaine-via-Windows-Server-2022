@@ -10,7 +10,7 @@
   L’enjeu principal est donc de mettre en place une infrastructure d’identité fiable, sécurisée, documentée et durable, permettant une exploitation
   autonome par l’établissement, avec une logique industrialisée pour les rentrées et les fins d’année scolaires.
 
-  ## 2) Engagement global de réalisation
+  ## 2) Réalisation
 
   Contenu : Windows Server 2022 + AD DS + DNS intégré, avec gouvernance des accès, automatisation PowerShell
   idempotente, sécurité alignée ANSSI, intégration NPS/RADIUS 802.1X et documentation d’exploitation complète.
@@ -20,7 +20,7 @@
 
   ## 3) Réponse détaillée aux exigences obligatoires
 
-  ### 3.1 Exigence (1) — AD DS + DNS intégré + structure OU
+  ### 3.1 AD DS + DNS intégré + structure OU
 
   Déploiement d'Active Directory Domain Services sur Windows Server 2022 avec promotion en contrôleur de domaine principal et configuration DNS
   complète.
@@ -35,7 +35,7 @@
    - Contrôleur principal : SRV-DC01
    - IP du DC : 192.168.40.5 (VLAN 40)
 
-  Nous mettrons en place l’arborescence OU demandée :
+  Mise en place l’arborescence OU demandée :
 
    - SISR (utilisateurs + ordinateurs SISR)
    - SLAM (utilisateurs + ordinateurs SLAM)
@@ -44,14 +44,14 @@
    - Ordinateurs
    - Groupes de sécurité
 
-  Cette structuration sera accompagnée d’une convention de nommage et de règles d’administration pour garantir la maintenabilité.
+  Cette structuration est accompagnée d’une convention de nommage et de règles d’administration pour garantir la maintenabilité.
 
-  3.2 Exigence (2) — GPO conformes ANSSI
+  ### 3.2 GPO conformes ANSSI
 
-  Nous appliquerons des GPO alignées avec les recommandations ANSSI pour AD/Windows, avec documentation paramètre par paramètre et référence de
+  Application des GPO alignées avec les recommandations ANSSI pour AD/Windows, avec documentation paramètre par paramètre et référence de
   conformité.
 
-  Les règles minimales intégrées seront :
+  Les règles minimales intégrées sont :
 
    - Politique mot de passe : longueur min 12, complexité activée, validité max 90 jours, historique 12, durée minimale 1 jour.
    - Verrouillage : seuil 5 tentatives échouées, verrouillage 30 minutes.
@@ -66,11 +66,7 @@
    - Rétention : 1 an
    - Référence ANSSI : DAT-NT-017
 
-  Nous prévoyons une application progressive (OU pilote puis généralisation) pour sécuriser la mise en production.
-
-  3.3 Exigence (3) — Scripts PowerShell idempotents et commentés
-
-  Nous livrerons les scripts d’exploitation demandés, commentés, rejouables et traçables.
+  ### 3.3 Scripts PowerShell idempotents et commentés
 
   Script 1 — Import CSV en masse :
 
@@ -93,9 +89,9 @@
 
   L’ensemble est livré avec exemples de fichiers d’entrée et procédures d’exécution.
 
-  3.4 Exigence (4) — Intégration NPS / RADIUS 802.1X
+  ### Intégration NPS / RADIUS 802.1X
 
-  Nous mettrons en place la chaîne d’authentification NPS ↔ AD pour le Wi-Fi 802.1X.
+  Mise en place la chaîne d’authentification NPS ↔ AD pour le Wi-Fi 802.1X.
 
   Le périmètre couvre : installation NPS, enregistrement dans AD, création des stratégies réseau, autorisation par groupes AD, tests d’authentification
   nominative.
@@ -114,9 +110,7 @@
     - GG_WIFI_ENSEIGNANTS → VLAN 20
     - GG_WIFI_ADMINISTRATION → VLAN 10
 
-  La coordination avec le périmètre RP-01 sera respectée pour les dépendances liées aux équipements réseau actifs.
-
-  3.5 Exigence (5) — Partages de fichiers et matrice de droits
+  ### 3.5 Partages de fichiers et matrice de droits
 
   Nous construirons une infrastructure de fichiers conforme aux règles demandées :
 
