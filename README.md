@@ -89,7 +89,7 @@
 
   L’ensemble est livré avec exemples de fichiers d’entrée et procédures d’exécution.
 
-  ### Intégration NPS / RADIUS 802.1X
+  ### 3.4 Intégration NPS / RADIUS 802.1X
 
   Mise en place la chaîne d’authentification NPS ↔ AD pour le Wi-Fi 802.1X.
 
@@ -112,46 +112,13 @@
 
   ### 3.5 Partages de fichiers et matrice de droits
 
-  Nous construirons une infrastructure de fichiers conforme aux règles demandées :
-
    - Dossiers personnels (home directories) : un dossier par utilisateur, accès utilisateur + administrateur uniquement, droits NTFS Modification.
    - Espaces de promotion : SISR-Commun et SLAM-Commun, Lecture/Écriture pour le groupe concerné, Lecture seule pour enseignants, refus pour autres
   populations.
 
-  Nous fournirons obligatoirement une matrice complète : groupes × ressources × niveaux de droits NTFS + partage SMB.
+  ### 3.6 Documentation technique complète
 
-  Cette matrice servira de référence d’exploitation et d’audit.
-
-  3.6 Exigence (6) — Documentation technique complète
-
-  Nous livrerons une documentation exploitable en autonomie couvrant architecture, configuration, exploitation courante, incidents courants et procédures
-  de maintenance.
-
-  L’objectif est une reprise simple par le responsable technique sans dépendance à l’équipe projet.
-
-  4) Réponse aux exigences souhaitables
-
-  Nous proposons d’intégrer les éléments souhaitables sous réserve de validation de cadrage :
-
-   - Synchronisation AD on-premise avec Azure AD Connect pour SSO M365.
-   - Redirection des dossiers utilisateurs (Documents, Bureau, Téléchargements) vers serveur de fichiers.
-   - Ajout d’un second contrôleur de domaine pour tolérance aux pannes.
-   - Tableaux de bord PowerShell (comptes inactifs, groupes, dernière connexion, expirations mot de passe).
-
-  Ces volets peuvent être traités en options techniques planifiées dans la période projet.
-
-  5) Respect explicite des exclusions
-
-  Nous confirmons la prise en compte stricte des exclusions du dossier :
-
-   - Pas d’intervention sur l’abonnement/services Microsoft 365 Éducation (Exchange Online, Teams, licences).
-   - Pas de déploiement de PKI interne.
-   - Pas de configuration des équipements réseau actifs (switches, bornes Wi-Fi), hors coordination RP-01.
-   - Pas de développement d’applications/portails/intranets.
-
-  6) Livrables (L1 à L8) — engagement de remise
-
-  Nous remettrons les livrables suivants :
+  Livrables :
 
    - L1 Schéma arborescence AD (OUs, groupes, comptes types).
    - L2 Documentation GPO (paramètres, périmètre, référence ANSSI).
@@ -164,39 +131,8 @@
    - L8 PV de recette (connexion domaine, GPO, lecteurs,
     802.1X).
 
-  7) Méthode de conduite et recette
-
-  La réalisation sera conduite en séquence maîtrisée : cadrage, déploiement AD/DNS, structuration OU/groupes, sécurité GPO, scripts, partages, NPS,
-  recette.
-
-  La recette vérifiera notamment :
-
-   - Connexion domaine sur postes Windows 10/11.
-   - Application effective des GPO selon profils.
-   - Mappage correct des lecteurs réseau.
-   - Restrictions étudiantes actives.
-   - Fonctionnement authentification Wi-Fi
-    802.1X nominative.
-
-  Point spécifique T8 :
-
-   - Recette NPS validée en simulation labo (client virtuel).
-   - Validation finale sur AP physiques conditionnée à la disponibilité de l’infrastructure RP-01.
-
-  8) Planning et jalon de remise
-
-  Nous nous alignons sur le cadre du dossier : période de réalisation décembre 2025 à février 2026 (5 semaines effectives) et remise finale au plus tard
-  le 20 mars 2026.
-
-  9) Conclusion
-
-  Nous confirmons donc notre engagement à délivrer une solution complète, sécurisée, documentée et exploitable, conforme aux exigences obligatoires RP-02,
-  avec prise en compte des exigences souhaitables et respect strict des exclusions.
-
-  Bien cordialement,
-
   Lavenir Louka
-  BTS SIO E5 — Option SISR
+  BTS SIO — Option SISR
   IRIS Nice — Mediaschool
 
 
