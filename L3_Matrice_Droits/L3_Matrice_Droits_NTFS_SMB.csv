@@ -1,0 +1,20 @@
+Ressource;Chemin;PartageSMB;GroupeOuPrincipal;DroitSMB;DroitNTFS;Commentaire
+Homes-Root;D:\Shares\Homes;Homes$;Domain Admins;Full;Full;Administration globale
+Homes-Root;D:\Shares\Homes;Homes$;SYSTEM;Full;Full;Systeme
+Home-Utilisateur;D:\Shares\Homes\%USERNAME%;Homes$;Utilisateur proprietaire;Change;Modify;Acces exclusif utilisateur
+Home-Utilisateur;D:\Shares\Homes\%USERNAME%;Homes$;Domain Admins;Full;Full;Support et exploitation
+SISR-Commun;D:\Shares\SISR-Commun;SISR-Commun;GG_SISR_ETUDIANTS;Change;Modify;Lecture/ecriture pour SISR
+SISR-Commun;D:\Shares\SISR-Commun;SISR-Commun;GG_ENSEIGNANTS;Read;ReadAndExecute;Lecture seule enseignants
+SISR-Commun;D:\Shares\SISR-Commun;SISR-Commun;GG_SLAM_ETUDIANTS;None;None;Aucun acces
+SISR-Commun;D:\Shares\SISR-Commun;SISR-Commun;GG_ADMINISTRATION;None;None;Aucun acces metier
+SISR-Commun;D:\Shares\SISR-Commun;SISR-Commun;Domain Admins;Full;Full;Administration globale
+SLAM-Commun;D:\Shares\SLAM-Commun;SLAM-Commun;GG_SLAM_ETUDIANTS;Change;Modify;Lecture/ecriture pour SLAM
+SLAM-Commun;D:\Shares\SLAM-Commun;SLAM-Commun;GG_ENSEIGNANTS;Read;ReadAndExecute;Lecture seule enseignants
+SLAM-Commun;D:\Shares\SLAM-Commun;SLAM-Commun;GG_SISR_ETUDIANTS;None;None;Aucun acces
+SLAM-Commun;D:\Shares\SLAM-Commun;SLAM-Commun;GG_ADMINISTRATION;None;None;Aucun acces metier
+SLAM-Commun;D:\Shares\SLAM-Commun;SLAM-Commun;Domain Admins;Full;Full;Administration globale
+Pedagogie;D:\Shares\Pedagogie;Pedagogie;GG_ENSEIGNANTS;Change;Modify;Espace equipe pedagogique
+Pedagogie;D:\Shares\Pedagogie;Pedagogie;GG_ADMINISTRATION;Read;ReadAndExecute;Consultation administrative
+Administration;D:\Shares\Administration;Administration;GG_ADMINISTRATION;Change;Modify;Espace administratif
+Administration;D:\Shares\Administration;Administration;GG_ENSEIGNANTS;None;None;Aucun acces
+Administration;D:\Shares\Administration;Administration;Domain Admins;Full;Full;Administration globale

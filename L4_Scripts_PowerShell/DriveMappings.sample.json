@@ -1,0 +1,43 @@
+{
+  "Mappings": [
+    {
+      "DriveLetter": "H",
+      "Path": "\\\\SRV-DC01\\Homes\\%USERNAME%",
+      "Groups": [
+        "*"
+      ]
+    },
+    {
+      "DriveLetter": "S",
+      "Path": "\\\\SRV-DC01\\SISR-Commun",
+      "Groups": [
+        "MEDIASCHOOL\\GG_SISR_ETUDIANTS",
+        "GG_SISR_ETUDIANTS"
+      ]
+    },
+    {
+      "DriveLetter": "L",
+      "Path": "\\\\SRV-DC01\\SLAM-Commun",
+      "Groups": [
+        "MEDIASCHOOL\\GG_SLAM_ETUDIANTS",
+        "GG_SLAM_ETUDIANTS"
+      ]
+    },
+    {
+      "DriveLetter": "P",
+      "Path": "\\\\SRV-DC01\\Pedagogie",
+      "Groups": [
+        "MEDIASCHOOL\\GG_ENSEIGNANTS",
+        "GG_ENSEIGNANTS"
+      ]
+    },
+    {
+      "DriveLetter": "A",
+      "Path": "\\\\SRV-DC01\\Administration",
+      "Groups": [
+        "MEDIASCHOOL\\GG_ADMINISTRATION",
+        "GG_ADMINISTRATION"
+      ]
+    }
+  ]
+}

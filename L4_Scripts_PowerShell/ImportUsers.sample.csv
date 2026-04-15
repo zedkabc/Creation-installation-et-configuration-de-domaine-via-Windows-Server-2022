@@ -1,0 +1,4 @@
+NOM;Prenom;OU cible;Groupe de securite;Adresse e-mail;SamAccountName;Password
+DURAND;Alice;OU=SISR,OU=Utilisateurs,DC=mediaschool,DC=lan;GG_SISR_ETUDIANTS;alice.durand@mediaschool.lan;alice.durand;Iris!2026
+MARTIN;Yanis;OU=SLAM,OU=Utilisateurs,DC=mediaschool,DC=lan;GG_SLAM_ETUDIANTS;yanis.martin@mediaschool.lan;yanis.martin;Iris!2026
+BERNARD;Luc;OU=Enseignants,OU=Utilisateurs,DC=mediaschool,DC=lan;GG_ENSEIGNANTS;luc.bernard@mediaschool.lan;luc.bernard;Iris!2026
