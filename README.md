@@ -1,4 +1,4 @@
-# 🚀 Installation et Configuration d’un Domaine Windows Server 2022 (VM)
+# Installation et Configuration d’un Domaine Windows Server 2022 (VM)
 
  ## 1) Compréhension du contexte et des enjeux
 
